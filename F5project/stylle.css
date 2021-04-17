@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+}
+
+
+div{
+  max-width: auto;
+
+}
+.menu-bar {
+  background: #244dd2;
+  text-align: center;
+  padding-left: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-bar ul li:hover {
+  background: #265ee0;
+  border-radius: 3px;
+}
+
+.menu-bar .fas {
+  margin-right: 16px;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: transparent;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  background: transparent;
+  display: block;
+  margin-left: 1px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 180px;
+  padding: 10px;
+  border-bottom: 1px solid;
+  background: transparent;
+  border-radius: 0;
+  text-align: center;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #244dd2;
+}
+
+.fa-angle-right {
+  float: right;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -30px;
+  margin-left: 180px;
+}
+
+.logo-class {
+  position: absolute;
+  margin-left: 0;
+  left: 30px;
+  margin-top: 20px;
+}
+
+.sub-div-lang {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-div-lang {
+  display: block;
+  position: absolute;
+  background: transparent;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.menu-bar ul li:hover .sub-div-lang ul {
+  background: #244dd2;
+  display: block;
+  margin-left: 1px;
+}
+
+.menu-bar ul li:hover .sub-div-lang ul li {
+  width: 80px;
+  padding: 10px;
+  border-bottom: 1px solid;
+  background: transparent;
+  border-radius: 0;
+  text-align: center;
+}
+
+.menu-bar ul li:hover .sub-div-lang ul li:last-child {
+  border-bottom: none;
+}
+
+.fa-envelope {
+  margin-left: 30px;
+}
+
+/* heading section */
+/* boutton hire me */
+.Hire-me:hover {
+  background-color: #ff3a47;
+}
+
+.container-fuild {
+  background: #244dd2;
+  height: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  position: relative;
+  left: 60%;
+  text-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+  font-size: 30px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+p {
+  width: 300px;
+  position: relative;
+  left: 60%;
+  font-size: 16px;
+  color: White;
+  line-height: 34px;
+}
+
+/* button hire me  */
+input[type="submit"] {
+  width: 20%;
+  height: 50px;
+  border-radius: 25px;
+  background: #ff3a47;
+  font-size: 18px;
+  color: white;
+  /* font-weight: 700; */
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  left: 60%;
+  margin-top: 30px;
+  border-color: #ff3a47;
+}
+
+input[type="submit"]:hover {
+  border-color: #ff3540;
+  transition: .5s;
+  outline: none;
+  background: #ff3540;
+}
+
+.image-of-section {
+  width: 400px;
+  position: relative;
+  bottom: 380px;
+  left: 190px;
+  display: inline-block;
+  animation: anim 30s ease-in forwards infinite;
+  /* animation: anim 12s ease-in forwards infinite; */
+  /* animation-direction: alternate; */
+}
+
+.dark-shadow {
+  width: 900px;
+  position: relative;
+  bottom: 650px;
+  right: 2.5%;
+  display: inline-block;
+  /* animation: anim 30s ease-in forwards infinite; */
+  /* opacity: 0.5; */
+}
+
+/* animation section */
+/* cubes animation */
+.hero {
+  background-color: #0040C1;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero__title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 1;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #003298;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+  animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+  border-color: #0051f4;
+}
+
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* image animation  */
+@keyframes anim {
+  from {
+    transform: scale(0) rotate(0deg) translate(0%, 0%);
+  }
+
+  to {
+    transform: scale(1) rotate(960deg) translate(7%, 7%);
+  }
+}
+
+/* body container */
+.body-container {
+  height: 1900px;
+  height: 1060px;
+}
+
+.div-container-one {
+  display: block;
+}
+
+.div-container-two {
+  display: block;
+  position: relative;
+  left: 600px;
+  bottom: 920px;
+}
+
+.why-corousel-icon {
+  padding: 10px;
+  position: relative;
+  left: 20px;
+  top: 80px;
+  text-align: right;
+  display: block;
+}
+
+.why-carousel-title {
+  position: relative;
+  left: 200px;
+  bottom: 80px;
+}
+
+.body-container p {
+  position: relative;
+  left: 200px;
+  width: 400px;
+  bottom: 60px;
+}
+
+.div-container-two {
+  position: relative;
+  right: 1000px;
+}
+
+.Get-in-touch {
+  position: absolute;
+  bottom :80px;
+  left: 40px;
+}
+
+.Get-in-touch:hover {
+  background-color: #ff3a47;
+  font-size: 20px;
+}
+
+/* animation of cub 3d */
+/*
+#mainDiv {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    perspective: 800px;
+}
+
+#boxDiv {
+    width: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 15s linear infinite;
+}
+
+#boxDiv div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity: 0.7;
+    color: white;
+}
+
+#front {
+    transform: translateZ(200px);
+    background: black;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#back {
+    transform: rotateY(180deg) translateZ(200px);
+    background: #101010;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#left {
+    transform: rotateY(-90deg) translateX(-200px);
+    transform-origin: left;
+    background: black;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#right {
+    transform: rotateY(90deg) translateX(200px);
+    transform-origin: right;
+    background: #101010;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#top {
+    transform: rotateX(-90deg) translateY(-200px);
+    transform-origin: top;
+    background: black;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bottom {
+    transform: rotateX(90deg) translateY(200px);
+    transform-origin: bottom;
+    background: #101010;
+    background-image: url(png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.shadow {
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotateX(90deg) translateZ(-250px) rotateY(180deg)
+        translateX(0px);
+} */
