@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 * {
   padding: 0;
@@ -11,15 +10,14 @@
   /* box-sizing: content-box; */
 }
 
-
-div{
+div {
   max-width: auto;
-
 }
+
 .menu-bar {
   background: #244dd2;
   text-align: center;
-  padding-left: 200px;
+  padding-left: 10%;
   position: relative;
   width: 100%;
 }
@@ -228,7 +226,7 @@ input[type="submit"]:hover {
   font-family: "Montserrat", sans-serif;
 }
 
-.hero__title {
+/* .hero__title {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -236,8 +234,7 @@ input[type="submit"]:hover {
   transform: translate(-50%, -50%);
   font-size: 50px;
   z-index: 1;
-}
-
+} */
 .cube {
   position: absolute;
   top: 80vh;
@@ -325,6 +322,10 @@ input[type="submit"]:hover {
   }
 }
 
+div .about-section {
+  height: 10px;
+}
+
 /* body container */
 .body-container {
   height: 1900px;
@@ -371,7 +372,7 @@ input[type="submit"]:hover {
 
 .Get-in-touch {
   position: absolute;
-  bottom :80px;
+  bottom: 80px;
   left: 40px;
 }
 
@@ -472,3 +473,124 @@ input[type="submit"]:hover {
     -webkit-transform: rotateX(90deg) translateZ(-250px) rotateY(180deg)
         translateX(0px);
 } */
+/* call to action section */
+.call-to-action {
+  position: absolute;
+  bottom: 400px;
+  /* left: 20%; */
+  transform: translate(-50%, -50%);
+  width: 800px;
+  /* background: white; */
+  margin-top: 60px;
+  position: relative;
+  left: 400px;
+}
+
+.call-to-action h1{
+position: relative;
+left: 90px;
+bottom: 50px;
+
+}
+.call-to-action form {
+  padding: 0 40px;
+  box-sizing: border-box;
+  /* background: White; */
+  border-radius: 5%;
+  /* opacity: 0.8; */
+  position: relative;
+  left:30%;
+  width: 100%;
+  top: 10px;
+}
+
+form .txt-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt-field span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.txt-field input:focus~label,
+.txt-field input:valid~label {
+  top: -5px;
+  color: white;
+}
+
+.txt-field input:focus~span,
+.txt-field input:valid~span {
+  width: 100%;
+}
+
+.pass {
+  margin: 0;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+
+
+.sign-up{
+  margin: 30px 0;
+  font-size: 16px;
+  color:#adadad;
+}
+
+
+.sign-up a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.sign-up a:hover{
+  text-decoration: underline;
+}
+
+
+
+.media-class{
+  height:10px;
+  padding: 40px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  bottom: 40px;
+}
